@@ -27,11 +27,11 @@ model_name = 'keras_model'
 optimiser = 'adam'
 inputsize = 1
 outputsize = 75000 # 25000*3 verts*xyz
-epoches = 333
-activator = 'tanh'
-layers = 3
-layer_units = 16
-batches = 1
+epoches = 777
+activator = 'selu'
+layers = 6
+layer_units = 32
+batches = 6
 samples = 90
 
 # load options
