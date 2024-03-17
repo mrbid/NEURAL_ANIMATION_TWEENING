@@ -5,7 +5,7 @@ Basically a Feed-Forward Neural Network generates your 3D animation frames for y
 ## Naming conventions
 `girl_ply` - These are the exported frames for each step of the animation in [PLY format](https://paulbourke.net/dataformats/ply/).\
 `girl_data` - This is the training data for the neural network.\
-`models` - Data generated from the training process is saved here.\
+`models` - Data generated from the training process is saved here.
 
 ## Steps
 1. open `girl_rig_exporter.blend` and run the script `export_frames` and the `girl_ply` folder will be created of each animation frame.
