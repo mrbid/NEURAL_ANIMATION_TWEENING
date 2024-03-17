@@ -42,3 +42,4 @@ Although I would run the network on a CPU with FMA auto-vectorisation `-mfma` ra
 as you'd have to send each frame from the CPU over to the GPU each time; where as the traditional method easily all happens in a vertex shader
 on data already loaded into GPU memory.
 
+Maybe you could efficiently run the FNN in a vertex shader..
