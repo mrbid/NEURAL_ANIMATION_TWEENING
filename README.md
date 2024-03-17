@@ -2,12 +2,12 @@ This project takes a [vertex colored](https://github.com/VertexColor) and rigged
 
 **A Feed-Forward Neural Network that generates and interpolates your 3D animation frames for you.**
 
-## Naming conventions
+## naming conventions
 `girl_ply` - These are the exported frames for each step of the animation in [PLY format](https://paulbourke.net/dataformats/ply/).\
 `girl_data` - This is the training data for the neural network.\
 `models` - Data generated from the training process is saved here.
 
-## Steps
+## steps
 1. Open `girl_rig_exporter.blend` and run the script `export_frames` and the `girl_ply` folder will be created of each animation frame.
 2. Open `scripts.blend` and run the script `ply_to_csv` and the `girl_data` folder will be created.
 3. Run `python3 fit.py` and the `girl_data` will be used to train a network which will be output to the `models` directory.
@@ -20,7 +20,7 @@ The `*_pd` directory contains test prediction data from the trained network for 
 Ultimately you will want to export the trained network weights and use them in your program to generate the output vertices in real-time
 based on a variable floating point input that represents the current time point between two animation frames.
 
-## Reality Check
+## reality check
 **Why would anyone want to do this?**
 
 There are 100 frames of training data, but in reality that is only 10 frames that would be linearly interpolated between in a vertex
