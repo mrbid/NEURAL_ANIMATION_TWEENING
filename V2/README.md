@@ -1,4 +1,4 @@
-**Slightly improved code, naming, and a much higher resolution mesh.
+**Slightly improved code, naming, and a much higher resolution mesh.**
 
 - Run the script in `mushman_exporter.blend` to create the `frames_ply` directory.
 - Run the script in `scripts.blend` to create the `training_data` directory.
