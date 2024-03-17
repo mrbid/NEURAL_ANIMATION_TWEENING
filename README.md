@@ -8,9 +8,9 @@ Basically a Feed-Forward Neural Network generates your 3D animation frames for y
 `models` - Data generated from the training process is saved here.
 
 ## Steps
-1. open `girl_rig_exporter.blend` and run the script `export_frames` and the `girl_ply` folder will be created of each animation frame.
-2. open `scripts.blend` and run the script `ply_to_csv` and the `girl_data` folder will be created.
-3. run `python3 fit.py` and the `girl_data` will be used to train a network which will be output to the `models` directory.
+1. Open `girl_rig_exporter.blend` and run the script `export_frames` and the `girl_ply` folder will be created of each animation frame.
+2. Open `scripts.blend` and run the script `ply_to_csv` and the `girl_data` folder will be created.
+3. Run `python3 fit.py` and the `girl_data` will be used to train a network which will be output to the `models` directory.
 4. In the `models` directory will be a `*_pd` directory, cd into it and execute the `CSVtoASC.sh` file inside of the `*_pd` directory.
 5. An `ASC` directory will now exist in the parent directory, inside here is a point cloud file in the .asc format of each vertex
 for each frame of the animation, you can load these into meshlab.
