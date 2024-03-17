@@ -8,7 +8,7 @@ This project takes a [vertex colored](https://github.com/VertexColor) and rigged
 `models` - Data generated from the training process is saved here.
 
 ## steps
-1. Open `girl_rig_exporter.blend` and run the script `export_frames` and the `girl_ply` folder will be created containing each 3D animation frame.
+1. Open `girl_rig_exporter.blend` and run the script `export_frames` and the `[girl_ply](main/girl_ply)` folder will be created containing each 3D animation frame.
 2. Open `scripts.blend` and run the script `ply_to_csv` and the `girl_data` folder will be created.
 3. Run `python3 fit.py` and the `girl_data` will be used to train a network which will be output to the `models` directory.
 4. In the `models` directory will be a `*_pd` directory, cd into it and execute the `CSVtoASC.sh` file inside of the `*_pd` directory.
