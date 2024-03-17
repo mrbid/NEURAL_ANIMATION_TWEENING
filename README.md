@@ -9,6 +9,7 @@ This project takes a [vertex colored](https://github.com/VertexColor) and rigged
 
 ## tips
 - You can drag multiple [ASC files](models/ASC) into [Meshlab](https://www.meshlab.net/) at once to see a point cloud of motion between frames.
+- Run [`reset.sh`](reset.sh) to delete all pre-generated training data and start afresh.
 
 ## steps
 1. Open [`girl_rig_exporter.blend`](girl_rig_exporter.blend) and run the script `export_frames` and the [`girl_ply`](main/girl_ply) folder will be created containing each 3D animation frame.
