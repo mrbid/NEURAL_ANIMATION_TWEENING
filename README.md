@@ -1,4 +1,4 @@
-This project takes a vertex coloreds and rigged animation in blender, exports each animation frame as a PLY file, then converts the PLY files to CSV training data, the trains an MLP/FNN network with an input of 0-totalframes and output of a vertex buffer so that decimal inbetween frames can be requested from the network and it will generate the interpolated vertex data within a deviance of 0.002 of the original training data from a network that has 97,034 parameters (379.04 KB).
+This project takes a vertex colored and rigged animation in Blender, exports each animation frame as a PLY file, then converts the PLY files to CSV training data, the trains an MLP/FNN network with an input of 0-totalframes and output of a vertex buffer so that decimal inbetween frames can be requested from the network and it will generate the interpolated vertex data within a deviance of 0.002 of the original training data from a network that has 97,034 parameters (379.04 KB).
 
 ## Steps
 1. open 'girl_rig_exporter.blend' and run the script 'export_frames' and the 'girl_ply' folder will be created of each animation frame.
