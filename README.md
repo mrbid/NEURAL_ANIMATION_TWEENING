@@ -34,7 +34,7 @@ Finally the network weights probably compress less well than the traditional 10 
 There is no benefit to using a neural network to generate vertex data for your mesh animations over lerping between animation frames,
 or even better, using a quaternion based skeletal animation system.
 
-But, it's pretty cool that it works, it's not a huge incrase in disk/ram space and the quality loss is not visually that bad.
+But, it's pretty cool that it works, it's not a huge increase in disk/ram space and the quality loss is not visually that bad.
 
 It's a loss I'd be willing to take just to be different.
 
