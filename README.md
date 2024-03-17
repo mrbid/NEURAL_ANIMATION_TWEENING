@@ -20,7 +20,7 @@ The `*_pd` directory contains test prediction data from the trained network for 
 Ultimately you will want to [export the trained network weights](models/girl_neural_tweening_layers.h) and use them in your program to generate the output vertices in real-time
 based on a variable floating-point input that represents the current normalised time point between two animation frames.
 
-Combine the generated vertex buffer with your pre-existing index buffer, UV/Color buffer, and normal buffer and you have a fully animated triangulated mesh!
+Combine the generated vertex buffer with your pre-existing index buffer, UV/Color buffer, and normal buffer and you have a fully animated, shaded, triangulated mesh!
 
 ## reality check
 **Why would anyone want to do this?**
