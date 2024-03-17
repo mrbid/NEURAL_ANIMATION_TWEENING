@@ -7,6 +7,9 @@ This project takes a [vertex colored](https://github.com/VertexColor) and rigged
 `girl_data` - This is the training data for the neural network.\
 `models` - Data generated from the training process is saved here.
 
+## tips
+- You can drag multiple ASC files into [Meshlab](https://www.meshlab.net/) at once to see a point-cloud of motion between frames.
+
 ## steps
 1. Open [`girl_rig_exporter.blend`](girl_rig_exporter.blend) and run the script `export_frames` and the [`girl_ply`](main/girl_ply) folder will be created containing each 3D animation frame.
 2. Open [`scripts.blend`](scripts.blend) and run the script `ply_to_csv` and the [`girl_data`](main/girl_data) folder will be created.
