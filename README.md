@@ -38,7 +38,7 @@ But, it's pretty cool that it works, it's not a huge incrase in disk/ram space a
 
 It's a loss I'd be willing to take just to be different.
 
-Although I would run the network on a CPU with FMA auto-vectorisation rather than in a shader... Which again could be seen as another loss
+Although I would run the network on a CPU with FMA auto-vectorisation `-mfma` rather than in a shader... Which again could be seen as another loss
 as you'd have to send each frame from the CPU over to the GPU each time; where as the traditional method easily all happens in a vertex shader
 on data already loaded into GPU memory.
 
