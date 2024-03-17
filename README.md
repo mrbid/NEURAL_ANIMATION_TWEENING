@@ -1,6 +1,6 @@
 This project takes a [vertex colored](https://github.com/VertexColor) and rigged animation in Blender, exports each animation frame as a PLY file, then converts the PLY files to CSV training data, then trains an MLP/FNN network with an input of 0-totalframes and output of a vertex buffer so that decimal inbetween frames can be requested from the network and it will generate the interpolated vertex data within a deviance of 0.002 of the original training data from a network that has 97,034 parameters (379.04 KB).
 
-Basically a Feed-Forward Neural Network generates your 3D animation frames for you.
+**Basically a Feed-Forward Neural Network generates your 3D animation frames for you.**
 
 ## Naming conventions
 `girl_ply` - These are the exported frames for each step of the animation in [PLY format](https://paulbourke.net/dataformats/ply/).\
@@ -21,7 +21,7 @@ Ultimately you will want to export the trained network weights and use them in y
 based on a variable floating point input that represents the current time point between two animation frames.
 
 ## Reality Check
-Why would anyone want to do this?
+**Why would anyone want to do this?**
 
 There are 100 frames of training data, but in reality that is only 10 frames that would be linearly interpolated between in a vertex
 shader. Each frame is ~22.63 KB in vertex data, so 10 frames is only 226.32 KB. This trained network provided as-is is 379.04 KB.
