@@ -26,7 +26,7 @@ based on a variable floating-point input that represents the current normalised 
 There are 100 frames of training data, but in reality that is only 10 frames that would be linearly interpolated between in a vertex
 shader. Each frame is ~22.63 KB in vertex data, so 10 frames is only 226.32 KB. This trained network provided as-is is 379.04 KB.
 
-Furthermore the amount of multiplications and additions used in this network is far far higher by an order of magnitude than a simple
+Furthermore the amount of multiplications and additions used in this network is far higher by an order of magnitude than a simple
 linear interpolate between frames and it's producing a much less accurate result.
 
 Finally the network weights probably compress less well than the traditional 10 frames would even if they where the same starting size.
