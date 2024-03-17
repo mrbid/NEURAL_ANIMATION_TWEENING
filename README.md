@@ -32,7 +32,7 @@ linear interpolate between frames and it's producing a much less accurate result
 Finally the network weights probably compress less well than the traditional 10 frames would even if they where the same starting size.
 
 There is no benefit to using a neural network to generate vertex data for your mesh animations over lerping between animation frames,
-or even better, using a quaternion based skeletal animation system.
+or even better, using a quaternion based skeletal animation system. [PGA?](https://enkimute.github.io/LookMaNoMatrices/)
 
 But, it's pretty cool that it works, it's not a huge increase in disk/ram space and the quality loss is not visually that bad.
 
