@@ -29,23 +29,18 @@ Combine the generated vertex buffer with your pre-existing index buffer, UV/Colo
 ## reality check
 **Why would anyone want to do this?**
 
-There are 100 frames of training data, but in reality that is only 10 frames that would be linearly interpolated between in a vertex
-shader. Each frame is ~22.63 KB in vertex data, so 10 frames is only 226.32 KB. This trained network provided as-is is 379.04 KB.
+There are 100 frames of training data, but in reality that is only 10 frames that would be linearly interpolated between in a vertex shader. Each frame is ~22.63 KB in vertex data, so 10 frames is only 226.32 KB. This trained network provided as-is is 379.04 KB. That's a 67.47% increase in size.
 
-Furthermore the amount of multiplications and additions used in this network is far higher by an order of magnitude than a simple
-linear interpolate between frames and it's producing a much less accurate result.
+Furthermore the amount of multiplications and additions used in this network is far higher by an order of magnitude than a simple linear interpolate between frames and it's producing a much less accurate result.
 
 Finally the network weights probably compress less well than the traditional 10 frames would even if they where the same starting size.
 
-There is no benefit to using a neural network to generate vertex data for your mesh animations over lerping between animation frames,
-or even better, using a quaternion based skeletal animation system. [PGA?](https://enkimute.github.io/LookMaNoMatrices/)
+There is no benefit to using a neural network to generate vertex data for your mesh animations over lerping between animation frames, or even better, using a quaternion based skeletal animation system. [PGA?](https://enkimute.github.io/LookMaNoMatrices/)
 
-But, it's pretty cool that it works, it's not a huge increase in disk/ram space and the quality loss is not visually that bad.
+But, it's pretty cool that it works, it's not a huge increase in disk/ram space _(67.47% is a large increase but at a small scale it's not too bad)_ and the quality loss is not visually that bad.
 
 It's a loss I'd be willing to take just to be different.
 
-Although I would run the network on a CPU with FMA auto-vectorisation `-mfma` rather than in a shader... Which again could be seen as another loss
-as you'd have to send each frame from the CPU over to the GPU each time; whereas the traditional method easily all happens in a vertex shader
-on data already loaded into GPU memory.
+Although I would run the network on a CPU with FMA auto-vectorisation `-mfma` rather than in a shader... Which again could be seen as another loss as you'd have to send each frame from the CPU over to the GPU each time; whereas the traditional method easily all happens in a vertex shader on data already loaded into GPU memory.
 
 Maybe you could efficiently run the FNN in a vertex shader..
